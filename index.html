@@ -36,8 +36,9 @@
           <div class="card shadow"> 
             <img src="mobil-3.jpg" class="img-thumbnail" style="height: 300px; object-fit: cover;" alt="img-thumbnail" />
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="card-text">1 Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
+            <div class="d-none deskripsi"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam reiciendis modi nulla itaque et dolor, earum magnam eos asperiores quis, pariatur, obcaecati totam commodi. Quibusdam veniam, accusantium eaque animi deleniti praesentium minus hic voluptatum neque unde natus, et, omnis repellat. Repellendus molestias saepe dolorem nostrum?</p></div>
             <div class="card-footer d-md-flex">
                 <a class="btn btn-sm btn-primary d-block btnDetail">DETAIL</a>
                 <span class="ms-auto text-danger fw-bold d-block text-center harga">Rp. 110.000.000</span>
@@ -48,7 +49,7 @@
           <div class="card shadow"> 
             <img src="mobil-4.jpg" class="img-thumbnail" style="height: 300px; object-fit: cover;" alt="img-thumbnail" />
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="card-text">2 Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="card-footer d-md-flex">
                 <a class="btn btn-sm btn-primary d-block btnDetail">DETAIL</a>
@@ -60,7 +61,7 @@
           <div class="card shadow"> 
             <img src="mobil-5.jpg" class="img-thumbnail" style="height: 300px; object-fit: cover;" alt="img-thumbnail" />
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="card-text">3 Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="card-footer d-md-flex">
                 <a class="btn btn-sm btn-primary d-block btnDetail">DETAIL</a>
@@ -72,7 +73,7 @@
           <div class="card shadow"> 
             <img src="mobil-6.jpg" class="img-thumbnail" style="height: 300px; object-fit: cover;" alt="img-thumbnail" />
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="card-text">4 Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="card-footer d-md-flex">
                 <a class="btn btn-sm btn-primary d-block btnDetail">DETAIL</a>
@@ -84,7 +85,7 @@
           <div class="card shadow"> 
             <img src="mobil-7.jpg" class="img-thumbnail" style="height: 300px; object-fit: cover;" alt="img-thumbnail" />
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="card-text">5 Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="card-footer d-md-flex">
                 <a class="btn btn-sm btn-primary d-block btnDetail">DETAIL</a>
@@ -96,7 +97,7 @@
           <div class="card shadow"> 
             <img src="mobil-8.jpg" class="img-thumbnail" style="height: 300px; object-fit: cover;" alt="img-thumbnail" />
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="card-text">6 Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="card-footer d-md-flex">
                 <a class="btn btn-sm btn-primary d-block btnDetail">DETAIL</a>
@@ -108,7 +109,7 @@
           <div class="card shadow"> 
             <img src="mobil-9.jpg" class="img-thumbnail" style="height: 300px; object-fit: cover;" alt="img-thumbnail" />
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="card-text">7 Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="card-footer d-md-flex">
                 <a class="btn btn-sm btn-primary d-block btnDetail">DETAIL</a>
@@ -120,7 +121,7 @@
           <div class="card shadow"> 
             <img src="mobil-10.jpg" class="img-thumbnail" style="height: 300px; object-fit: cover;" alt="img-thumbnail" />
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="card-text">8 Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="card-footer d-md-flex">
                 <a class="btn btn-sm btn-primary d-block btnDetail">DETAIL</a>
@@ -162,6 +163,36 @@
         <!-- copyright -->
         <div class="text-center p-4 border-top">&copy; 2023 HansGarage. - Jual Beli Mobil Berkualitas</div>
       </div>
+
+      <!-- modal -->
+      
+<button type="button" class="btn btn-primary d-none btnModal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-x1">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 modalTitle" id="exampleModalLabel"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="modalImage col-md-6 col-12"></div>
+        <div class="col-md-6 col-12">
+          <div class="modalDeskripsi"></div>
+          <div class="d-md-flex">
+            <a href=""   class="btn btn-sm btn-warning d-block btnBeli">Beli Produk Ini</a>
+            <span class="ms-auto text-danger fw-bold d-block text-center modalHarga">Rp. 215.000.000</span>
+        </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
      <script src="javascipt/main.js"></script>
   </body>

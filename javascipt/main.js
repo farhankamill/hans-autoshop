@@ -4,6 +4,18 @@ document.querySelectorAll('.btnDetail').forEach(item => {
 
       let. gambar = parent.querySelector('.img-thumbnail').src;
       let. harga = parent.querySelector('.harga').innerHTML;
-      console.log('gambar: $(harga)');
+      let. judul = parent.querySelector('.card-text').innerHTML;
+      let. deskripsi = parent.querySelector('.deskripsi') ? parent.querySelector('.deskripsi').innerHTMLm : '<i>tidak ada informasi yang tersedia</i>';
+   
+
+      let tombolModal = document.querySelector('.btnModal');
+      tombolModal.click();
+
+      document.querySelector('.modalTitle').innerHTML = judul;
+      let image = document.createElement('img');
+      image.src = gambar;
+      image.classList.add('w-100');
+      document.querySelector('.modalImage').innerHTML = '';
+      document.querySelector('.modalImage').appendChild(image);
    });
 });
